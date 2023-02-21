@@ -142,7 +142,7 @@ app.delete("/books/:bookId/", async (request, response) => {
   response.send("Book Deleted Successfully");
 });
 
-//GET Book API
+//GET Author Book API
 app.get("/authors/:authorId/books/", async (request, response) => {
   const { authorId } = request.params;
   const getAuthorBooksQuery = `
